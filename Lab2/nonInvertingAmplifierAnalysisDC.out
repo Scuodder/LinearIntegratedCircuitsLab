@@ -1,5 +1,5 @@
-
-**** 02/12/19 23:00:27 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+**** 02/12/19 23:52:31 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
  ** non inverting amplifier analysis
 
@@ -33,7 +33,7 @@
 .PROBE 
 .END                         
 
-**** 02/12/19 23:00:27 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 02/12/19 23:52:31 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
  ** non inverting amplifier analysis
 
@@ -51,7 +51,7 @@
           RS    1            
 
 
-**** 02/12/19 23:00:27 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 02/12/19 23:52:31 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
  ** non inverting amplifier analysis
 
@@ -92,7 +92,7 @@
 
           JOB CONCLUDED
 
-**** 02/12/19 23:00:27 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 02/12/19 23:52:31 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
  ** non inverting amplifier analysis
 

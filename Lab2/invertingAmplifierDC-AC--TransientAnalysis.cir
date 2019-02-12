@@ -1,0 +1,39 @@
+** non inverting amplifier analysis
+
+
+.LIB C:\OrCAD\OrCAD_16.6_Lite\tools\pspice\library\eval.lib
+
+
+	X1 0 2 4 5 3 UA741 
+	
+	R1 6 2 1K 
+	R2 2 3 10K 
+     
+*VIN 6 0 0V  
+	
+	*DEFAULT DC 
+   
+   * FOR AC 
+
+*VIN 6 0 DC 0V AC 100m	
+
+
+ * FOR TRANSIENT ANALYSIS 
+
+ 	VIN 6 0 SIN(0 1 1K)
+
+	VDD 4 0 15V 
+	VSS 5 0 -15V
+
+	** FOR DC ANALYSIS 
+*.DC VIN -10V 10V 0.1V 
+
+
+    ** FOR AC ANALYSIS
+*.AC DEC 50 10 100MEG   
+	** 10 hertz to 100 Mega hertz with 
+
+ .TRAN 0.001 3m
+
+.PROBE 
+.END  

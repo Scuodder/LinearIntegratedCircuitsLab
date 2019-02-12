@@ -1,0 +1,48 @@
+
+**** 02/12/19 23:57:52 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** non inverting amplifier analysis
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+
+.LIB C:\OrCAD\OrCAD_16.6_Lite\tools\pspice\library\eval.lib
+
+
+        X1 1 2 4 5 3 UA741 
+        
+        R1 6 2 1K 
+        R2 2 3 10K 
+     
+VIN 6 0 0V  
+        
+        *DEFAULT DC 
+   
+   * FOR AC 
+
+*VIN 6 0 DC 0V AC 100m  
+
+
+        VDD 4 0 10V 
+        VSS 5 0 -10V
+
+        ** FOR DC ANALYSIS 
+.DC VIN -10V 10V 0.1V 
+
+
+    ** FOR AC ANALYSIS
+** .AC DEC 50 10 100MEG   
+        ** 10 hertz to 100 Mega hertz with 
+
+.PROBE 
+.END  
+
+ERROR(ORPSIM-15141): Less than 2 connections at node 1.
+
