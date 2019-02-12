@@ -1,0 +1,108 @@
+
+**** 02/12/19 23:00:27 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** non inverting amplifier analysis
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+
+.LIB C:\OrCAD\OrCAD_16.6_Lite\tools\pspice\library\eval.lib
+
+
+        X1 1 2 4 5 3 UA741 
+        
+        R1 2 0 1K 
+        R2 3 2 1K 
+     
+        VIN 1 0 0V      
+
+
+        VDD 4 0 10V 
+        VSS 5 0 -10V
+
+        ** FOR DC ANALYSIS 
+        .DC VIN -10V 10V 0.1V 
+
+.PROBE 
+.END                         
+
+**** 02/12/19 23:00:27 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** non inverting amplifier analysis
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X1.dx           
+          IS  800.000000E-18 
+          RS    1            
+
+
+**** 02/12/19 23:00:27 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** non inverting amplifier analysis
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X1.qx           
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+**** 02/12/19 23:00:27 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** non inverting amplifier analysis
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

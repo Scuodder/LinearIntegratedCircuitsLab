@@ -1,0 +1,22 @@
+** non inverting amplifier analysis
+
+
+.LIB C:\OrCAD\OrCAD_16.6_Lite\tools\pspice\library\eval.lib
+
+
+	X1 1 2 4 5 3 UA741 
+	
+	R1 2 0 1K 
+	R2 3 2 1K 
+     
+	VIN 1 0 0V 	
+
+
+	VDD 4 0 10V 
+	VSS 5 0 -10V
+
+	** FOR DC ANALYSIS 
+	.DC VIN -10V 10V 0.1V 
+
+.PROBE 
+.END                         
