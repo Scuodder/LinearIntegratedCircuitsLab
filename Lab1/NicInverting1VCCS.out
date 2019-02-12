@@ -1,0 +1,108 @@
+
+**** 02/12/19 21:58:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ********  inverting VCCS from NIC  
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+.lib C:\OrCAD\OrCAD_16.6_Lite\tools\pspice\library\eval.lib 
+
+
+X1 3 2 5 6 4 UA741
+
+R1 1 2 10k
+R2 4 3 10k
+R3 2 4 10k
+R4 3 0 10k 
+R5 3 0 10k
+
+VP 5 0 15V
+VM 6 0 -15V
+
+V1 1 0 0V
+
+.DC V1 -10V 10V 0.001V
+ 
+.probe 
+.end 
+
+**** 02/12/19 21:58:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ********  inverting VCCS from NIC  
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X1.dx           
+          IS  800.000000E-18 
+          RS    1            
+
+
+**** 02/12/19 21:58:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ********  inverting VCCS from NIC  
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X1.qx           
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+**** 02/12/19 21:58:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ********  inverting VCCS from NIC  
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .84
+

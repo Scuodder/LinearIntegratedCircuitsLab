@@ -1,0 +1,43 @@
+
+**** 02/12/19 21:31:15 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ********  inverting VCCS from NIC  
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+.lib C:\OrCAD\OrCAD_16.6_Lite\tools\pspice\library\eval.lib 
+
+
+X1 2 3 5 6 4 
+
+R1 1 2 10k
+R2 4 3 10k
+R3 2 4 10k
+R4 3 0 10k 
+R5 2 0 10k
+
+VP 5 0 15V
+VM 6 0 -15V
+
+V1 1 0 0V
+
+.DC V1 0 10V 0.1V
+ 
+.probe 
+.end 
+
+INFO(ORPSIM-15423): Unable to find index file eval.ind for library file eval.lib.
+
+INFO(ORPSIM-15422): Making new index file eval.ind for library file eval.lib.
+
+Index has 63 entries from 1 file(s).
+
+ERROR(ORPSIM-15108): Subcircuit 4 used by X1 is undefined
+

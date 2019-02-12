@@ -1,0 +1,22 @@
+********  inverting VCCS from NIC  
+
+.lib C:\OrCAD\OrCAD_16.6_Lite\tools\pspice\library\eval.lib 
+
+
+X1 3 2 5 6 4 UA741
+
+R1 1 2 10k
+R2 4 3 10k
+R3 2 4 10k
+R4 3 0 10k 
+R5 3 0 10k
+
+VP 5 0 15V
+VM 6 0 -15V
+
+V1 1 0 0V
+
+.DC V1 -10V 10V 0.001V
+ 
+.probe 
+.end 
